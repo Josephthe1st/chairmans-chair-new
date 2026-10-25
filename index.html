@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>The Chairman's Chair</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header id="hud">
+    <div id="timer" aria-label="Time left">90</div>
+    <div id="chairBox"><img id="chairImg" src="images/chair0.png" alt=""><span id="stageName"></span></div>
+    <button id="mute" aria-label="Mute">🔊</button>
+    <div id="mats"></div>
+  </header>
+
+  <div id="stage">
+    <canvas id="game" width="384" height="256"></canvas>
+    <div id="toast"></div>
+  </div>
+
+  <div id="pad">
+    <div id="dpad">
+      <button data-k="up">▲</button><button data-k="left">◀</button><button data-k="right">▶</button><button data-k="down">▼</button>
+    </div>
+    <button id="act">E</button>
+  </div>
+
+  <p class="hint">Move: WASD / arrows &nbsp;·&nbsp; Interact: E / Space</p>
+
+  <footer>Made with love by <a href="https://x.com/mean_lordx" target="_blank" rel="noopener">Mlord</a> for <a href="https://x.com/themutualfun" target="_blank" rel="noopener">TMF</a> &nbsp;·&nbsp; unofficial fan game</footer>
+</main>
+<div id="overlay"></div>
+<script src="script.js"></script>
+</body>
+</html>
